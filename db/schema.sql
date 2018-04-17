@@ -1,12 +1,12 @@
 ### Schema
 
-CREATE DATABASE cat_db;
-USE cat_db;
+CREATE DATABASE sandwich_db;
+USE sandwich_db;
 
-CREATE TABLE cats
+CREATE TABLE sandwiches
 (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(255) NOT NULL,
-	sleepy BOOLEAN DEFAULT false,
+	eaten BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
