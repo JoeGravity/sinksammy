@@ -1,26 +1,46 @@
-<h1>Sandwiches!</h1>
-
-<h2>Sandwiches that are not eaten!</h2>
-
-<ul>
-  {{#each sandwiches}}
-    {{#unless eaten}}
-      {{> sandwiches/sandwich-block eaten=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Sandwiches that are eaten!</h2>
-
-<ul>
-  {{#each sandwiches}}
-    {{#if eaten}}
-      {{> sandwiches/sandwich-block eaten=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Sandwich</h2>
+<div class="container">
+  <div class="row mt-4">
+    <!-- <h2 class="text-center">Sandwiches to Eat</h2><br> -->
+    <div class="col-md-4 p-3 mb-2 bg-light text-dark">
+      <ul>
+        {{#each sandwiches}}
+         {{#unless eaten}}
+          {{> sandwiches/sandwich-block eaten=true}}
+         {{/unless}}
+       {{/each}}
+      </ul>
+    </div>
+    <div class="col-md-2 p-4 text-center">
+      {{!-- <button type="button" class="btn btn-secondary">Sink the Sub!</button> --}}
+    </div>
+    <div class="col-md-6 p-3 mb-2 bg-light text-dark">
+      <ul>
+        {{#each sandwiches}}
+         {{#if eaten}}
+          {{> sandwiches/sandwich-block eaten=false}}
+         {{/if}}
+       {{/each}}
+      </ul>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col">
+    </div>
+    <div class="col-5 text-center">
+{{!--       <div class="form-group mb-3 create-form">
+          <h2>Send me a New Sammy!</h2>
+        <textarea class="form-control" id="ca" rows="1" name="name" type="text"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="eaten">Eaten?</label>
+        <br>
+        <input type="radio" name="eaten" value="1" checked>Eaten
+        <br>
+        <input type="radio" name="eaten" value="0">Ready!
+      </div>
+      <input class="btn btn-primary mb-3" type="submit" value="Submit">
+      <br> Enter a sandwich you want, then click the Submit button.
+ --}}
 <form class="create-form">
 
   <div class="form-group">
@@ -36,3 +56,9 @@
 
   <button type="submit">Add Sandwich</button>
 </form>
+
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>
