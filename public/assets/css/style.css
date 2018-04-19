@@ -1,5 +1,8 @@
 body {
-  background-color: #783011;
+  /* background-color: #783011; */
+  background: linear-gradient(to right, rgb(237, 130, 0), rgb(40, 16, 0), rgb(26, 0, 0), rgb(237, 130, 0));
+  background-size: cover;
+  /* color: rgb(255, 246, 165); */
 }
 li {
   padding: 5px;
@@ -26,3 +29,12 @@ ul {
   margin-left: 0; padding-left: 0;
   }
   
+h1 {
+  text-align: center;
+    font-size: 4rem;
+    font-family: 'Rammetto One', cursive;
+    color: rgb(255, 246, 165);
+}
+#sambox {
+  text-align: center;
+}
