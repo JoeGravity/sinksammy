@@ -1,22 +1,28 @@
 body {
-  background-color: burlywood
+  background-color: #783011;
 }
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: hsl(34, 58%, 69%);
 }
 
 .label {
   font-weight: bold;
 }
 
-.create-update-form {
+.create-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  background: rgb(249, 181, 80);
 }
 
 .form-group {
   margin-bottom: 5px;
 }
+
+ul {
+  list-style: none;
+  margin-left: 0; padding-left: 0;
+  }
+  

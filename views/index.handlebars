@@ -1,7 +1,7 @@
-<div class="container">
-  <div class="row mt-4">
+{{!-- <div class="container"> --}}
+  <div class="row justify-content-center mt-4">
     <!-- <h2 class="text-center">Sandwiches to Eat</h2><br> -->
-    <div class="col-md-4 p-3 mb-2 bg-light text-dark">
+    <div class="col-md-5 p-3 m-2 rounded-left bg-light text-dark">
       <ul>
         {{#each sandwiches}}
          {{#unless eaten}}
@@ -10,10 +10,10 @@
        {{/each}}
       </ul>
     </div>
-    <div class="col-md-2 p-4 text-center">
-      {{!-- <button type="button" class="btn btn-secondary">Sink the Sub!</button> --}}
-    </div>
-    <div class="col-md-6 p-3 mb-2 bg-light text-dark">
+    {{!-- <div class="col-md-2 p-4 text-center">
+       <button type="button" class="btn btn-secondary">Sink the Sub!</button>
+    </div> --}}
+    <div class="col-md-5 p-3 m-2 rounded-right bg-light text-dark">
       <ul>
         {{#each sandwiches}}
          {{#if eaten}}
@@ -26,39 +26,20 @@
   <div class="row mt-4">
     <div class="col">
     </div>
-    <div class="col-5 text-center">
-{{!--       <div class="form-group mb-3 create-form">
+    <form class="col-5 p-3 text-center rounded create-form">
+      <div class="form-group mb-3">
           <h2>Send me a New Sammy!</h2>
         <textarea class="form-control" id="ca" rows="1" name="name" type="text"></textarea>
       </div>
       <div class="form-group">
-        <label for="eaten">Eaten?</label>
-        <br>
-        <input type="radio" name="eaten" value="1" checked>Eaten
-        <br>
-        <input type="radio" name="eaten" value="0">Ready!
+        <input type="radio" name="eaten" value="0" checked> Ready! | 
+        <input type="radio" name="eaten" value="1"> Eaten
       </div>
-      <input class="btn btn-primary mb-3" type="submit" value="Submit">
-      <br> Enter a sandwich you want, then click the Submit button.
- --}}
-<form class="create-form">
+      <input class="btn btn-danger my-3" type="submit" value="SANDWICH">
+      <br> Enter a sandwich you want, then click the Sandwich button.
 
-  <div class="form-group">
-    <label for="ca">Sandwich Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="eaten">Eaten?</label><br>
-    <input type="radio" name="eaten" value="1" checked>Eaten<br>
-    <input type="radio" name="eaten" value="0">Ready!
-  </div>
-
-  <button type="submit">Add Sandwich</button>
-</form>
-
-    </div>
+    </form>
     <div class="col">
     </div>
   </div>
-</div>
+{{!-- </div> --}}

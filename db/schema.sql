@@ -5,8 +5,9 @@ USE sandwich_db;
 
 CREATE TABLE sandwiches
 (
-	id int NOT NULL AUTO_INCREMENT,
+	id INT NOT NULL AUTO_INCREMENT,
 	name varchar(255) NOT NULL,
 	eaten BOOLEAN DEFAULT false,
+	createdAt TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
 );
