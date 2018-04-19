@@ -38,3 +38,8 @@ h1 {
 #sambox {
   text-align: center;
 }
+h2 {
+  font-size: 2rem;
+  font-family: 'Rammetto One', cursive;
+  color: rgb(162, 35, 35);
+}
